@@ -1,0 +1,33 @@
+.categoria-producto{
+    background-color: $azul;
+    border-radius: 50px 0px 0px 50px;
+    
+    p{
+        font-size: 2.5rem;
+        color: $amarillo-light;
+        margin-right: 10rem;
+        margin-left: 1rem;
+    }
+}
+.contenedor-listProductos{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include tablet{
+        flex-direction: row;
+        align-items:initial
+        
+    }
+}
+.cont-listadoProductos{
+    background: #F4F6F6;
+    box-shadow: inset 20px -20px 60px #cfd1d1,
+            inset -20px 20px 60px #ffffff;
+}
+.filaProductos{
+    @include gridColumna(2,1);
+    
+    @include desktop{
+        @include gridColumna(4,1);
+    }
+}

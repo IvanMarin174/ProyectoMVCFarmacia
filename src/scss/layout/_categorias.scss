@@ -1,0 +1,50 @@
+.division{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;    
+    height: 10rem;
+    background: rgb(194,233,251);
+    background: radial-gradient(circle, rgba(194,233,251,1) 0%, rgba(161,196,253,1) 100%);
+    margin-bottom: 1rem;
+    @include tablet{
+        height: 20rem;         
+    }
+}
+@include tablet{
+    .servicios{
+        @include griColumnRow(3,2,4);
+    }
+}
+.category{    
+    background-color: $rosa;           
+    color: $azul; 
+    border-radius: 20px 0px 
+    
+}
+.category{
+    img{ 
+        width: 10rem;
+        height: 10rem;
+
+        @include tablet{
+            width: 20rem;
+            height: 20rem;
+        }
+    }
+    picture{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }
+    p{
+        text-align: center;
+        color:$azul;
+        font-weight: $bold;    
+    }
+   &:hover{
+        border: 3px solid $amarillo;
+   }
+}

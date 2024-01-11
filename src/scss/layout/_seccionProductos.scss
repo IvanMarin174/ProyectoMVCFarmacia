@@ -1,0 +1,18 @@
+.cont-seccionProductos{
+        
+    background: #F4F6F6;
+    box-shadow: inset 20px -20px 60px #cfd1d1,
+            inset -20px 20px 60px #ffffff;
+    @include tablet{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.producto{
+    
+    background-color: #ffffff;
+    margin: 1rem;
+    position: relative;
+
+}

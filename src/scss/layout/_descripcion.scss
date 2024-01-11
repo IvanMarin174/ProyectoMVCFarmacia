@@ -1,0 +1,47 @@
+.no-webp .cont-descrip{
+    background-image: url(/build/img/fondoDescripCelular.jpeg);
+    @include tablet{
+        background-image: url(/build/img/farmaciaTienda.jpeg);
+    }
+}
+.webp .cont-descrip{
+    background-image: url(/build/img/fondoDescripCelular.webp);
+    @include tablet{
+        background-image: url(/build/img/farmaciaTienda.webp);
+    }
+}
+
+.cont-descrip{
+    
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 400px;
+    position: relative;
+    @include tablet{        
+        background-repeat: no-repeat;
+        background-size:cover;
+        height: 700px;
+        position: relative;
+        
+    }
+}
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(101,218,247,1) 100%);
+    opacity: 0.5;
+    h1{
+        max-width: 60rem;
+    }
+    p{
+        max-width: 60rem;
+        text-align: justify;
+        font-style: italic;
+    }
+}

@@ -1,0 +1,21 @@
+.oferta{
+    background-color: #E74C3C;
+    border: 3px solid $amarillo-light;
+    border-radius: 50%;    
+    color: $amarillo-light;    
+    position: absolute;
+    font-size: 3.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+.precioOferta{
+    color: $rojo;
+    font-size: 1.8rem;      
+    
+}
+.tachar{
+    text-decoration:line-through;
+    color: #ABB2B9;
+    font-size: 1.3rem;
+}

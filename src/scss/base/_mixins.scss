@@ -1,0 +1,91 @@
+/** Media Queries **/
+@mixin telefono {
+    @media (min-width: #{$telefono}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
+}
+  
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+@mixin gridColumna($columnas, $espaciado ) {
+    display: grid;
+    gap: $espaciado;
+    grid-template-columns: repeat($columnas, 1fr);
+}
+@mixin gridFila($fila, $espaciado){
+    display: grid;
+    gap: $espaciado;
+    grid-template-rows: repeat($fila, 1fr);
+}
+@mixin griColumnRow($column,$fila,$espaciado) {
+    display: grid;
+    grid-template-columns: repeat($column, 1fr);
+    column-gap: 2rem;
+    grid-template-rows: repeat($fila, 1fr);
+    row-gap: 2rem;
+    margin-bottom: 3rem;
+        
+}
+@mixin boton($bg){    
+    display: inline;
+    color: black;
+    text-decoration: none;
+    margin: 2rem;    
+    background-color: $bg;    
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em; 
+    &:hover {
+        transform: translate(-0.05em, -0.05em);
+        box-shadow: 0.15em 0.15em;
+    }
+       
+    &:active {
+        transform: translate(0.05em, 0.05em);
+        box-shadow: 0.05em 0.05em;
+    }
+    
+}
+@mixin botonAnima($bg){
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 5rem;
+    @include tablet{
+        display: inline-block;
+        margin: 10px;
+        padding: 15px 30px;
+        width: 20rem;
+    }
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: $bg;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid $bg;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 $bg;
+    &:hover{
+        color: white;
+        box-shadow: inset 0 -100px 0 0 $bg;
+    }
+    &:active {
+        transform: scale(0.9);
+    }
+    
+}

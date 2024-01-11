@@ -1,0 +1,66 @@
+.cont-filtros{
+    
+    display: block;
+    
+    width: 70rem;
+    margin-right: 2rem;
+}
+.titulo-filtro{
+    border-bottom: 3px solid $amarillo;
+    h3{
+        font-size: 2.5rem;
+        color: $azul;
+    }
+}
+.filtro{
+    background-color: $amarillo-light;
+    border-bottom: 3px solid $azul;
+    display: block;
+    margin-top: 2rem;
+    
+    &:hover{
+        cursor: pointer;
+    }
+    
+}
+.icono-arrowDown{
+    display: flex;
+}
+.icono-arrowUp{
+    display: none;
+}
+.despliege{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 1rem;
+    h3{
+        font-size: 2rem;
+        font-weight: $bold;
+        
+    }
+    img{
+        height: 3rem;
+        width: 5rem;
+        padding: 0;
+        margin: 0;   
+        
+    }
+}
+.contenido-filtro{
+    display: none;
+    ul{
+        list-style:none;
+        margin: 0;
+    }
+    
+    li{
+        margin: 0;
+    }
+}
+.mostrar{
+    display: flex;
+}
+.quitar{
+    display: none;
+}

@@ -1,0 +1,34 @@
+.infoProducto{
+    background-color: $amarillo-light;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div{
+        padding: 1rem; 
+        width: 80%;
+        p{
+            text-align: justify;
+        }
+        h3{
+            text-align: left;
+        }
+     }
+}
+.advertencias{
+    background-color: #FADBD8;    
+    color: #A93226  ;
+
+}
+.info-consumo{
+    background-color: #9ED2C6;
+    color: #54BAB9;
+}
+.info{
+    background-color: #FAF7F0;
+    color: #515A5A ;
+}
+.conservacion{
+    background-color: #FED2AA;
+    color: #E67E22 
+}

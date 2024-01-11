@@ -1,0 +1,55 @@
+.footer{
+    background-color: $azul;
+    padding: 2.5rem;
+    .cont-footer{
+        padding-top: 2.5rem;
+    }
+    p{
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: $bold;
+        color: $amarillo;
+    }
+    .admin{        
+        font-size: 1.8rem;        
+        text-align: center;        
+        text-rendering: optimizeLegibility;
+  
+        &.elegantshadow {
+            color: $amarillo;    
+            letter-spacing: .15em;
+            text-shadow: 
+            1px -1px 0 #767676, 
+            -1px 2px 1px #737272, 
+            -2px 4px 1px #767474, 
+            -3px 6px 1px #787777,  
+            
+        }
+        &:hover{
+            text-shadow: none;
+            
+        }
+
+    }
+}
+.nav-footer{
+    @include tablet{
+        display: flex;
+        
+    }
+   a{   
+        
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 2rem;
+        display: block;
+        text-align: center;
+        color: $amarillo;
+       
+        
+        @include tablet{
+            margin-right: 2rem;
+        }
+   }
+  
+}

@@ -1,0 +1,52 @@
+@include tablet{
+    .cont-describe-Producto{
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+        
+}   
+    
+    
+}
+.imangenProducto{    
+    
+    picture{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+        justify-content: center;
+        
+    }
+    img{
+        width: 40rem;
+    }
+}
+.datos-producto{
+    background-color:$amarillo-light ;
+    border-left: 2px solid $azul;
+    height: 17rem;    
+    font-size: 1.4rem;
+    
+    ul{
+        list-style: none;
+        margin: 0;
+    }
+    li{
+        max-width: 30rem;
+        margin: 0;
+    }
+   .estiloCategoria{
+        border-radius: 10px;
+        background: #FED1EF;
+        font-weight: $bold;
+        color: $azul;
+        padding: 0.5rem;
+        margin: 1rem;
+        
+   }
+}
+.precio{
+    font-weight: $black;
+    color: $azul;
+    font-size: 1.8rem;    
+}

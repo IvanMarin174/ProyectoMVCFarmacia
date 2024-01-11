@@ -1,0 +1,21 @@
+@import 'base/normalize';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/globales';
+@import 'base/utilidades';
+@import 'base/botones';
+/**UI*/
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/descripcion';
+@import 'layout/categorias';
+@import 'layout/seccionProductos';
+@import 'layout/oferta';
+@import 'layout/formulario';
+
+/*Internas*/
+@import 'internas/producto';
+@import 'internas/infoProducto';
+@import 'internas/llistadoProductos';
+@import 'internas/filtros';
+@import 'internas/admin';

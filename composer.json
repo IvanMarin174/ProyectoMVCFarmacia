@@ -1,0 +1,22 @@
+{
+    "name": "ivanmarin/proyecto-farmacia_final",
+    "description": "Proyecto Farmacia",
+    "authors": [
+        {
+            "name": "Ivan Marin"
+        }
+    ],
+    "require": {
+        "intervention/image": "^2.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Model\\": "./models",
+            "MVC\\": "./",
+            "Controllers\\": "./controllers"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
